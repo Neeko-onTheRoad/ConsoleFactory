@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headers\JsonManagement">
+      <UniqueIdentifier>{96c4b378-579f-47e4-8706-3dadce05c962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\JsonManagement\TokenSystem">
+      <UniqueIdentifier>{d54cb8ff-cf72-4602-858e-d23951013340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\JsonManagement">
+      <UniqueIdentifier>{7d0fed09-2e77-4409-8f32-2f070f7ab32f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\JsonManagement\TokenSystem">
+      <UniqueIdentifier>{7baf93f1-e425-4606-9675-437949539f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\JsonManagement\TokenSystem\Tokens">
+      <UniqueIdentifier>{929c289b-9007-4ac8-b9ef-b184f45fa4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\JsonManagement\TokenSystem\Tokens">
+      <UniqueIdentifier>{b0d0f8d2-5da2-4837-8378-44a259065805}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JsonToken.Hxx">
+      <Filter>Headers\JsonManagement\TokenSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonString.Hxx">
+      <Filter>Headers\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonBoolean.Hxx">
+      <Filter>Headers\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JsonToken.Cxx">
+      <Filter>Sources\JsonManagement\TokenSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonString.Cxx">
+      <Filter>Sources\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonBoolean.Cxx">
+      <Filter>Sources\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

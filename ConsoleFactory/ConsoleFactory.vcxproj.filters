@@ -42,6 +42,12 @@
     <ClInclude Include="JsonBoolean.Hxx">
       <Filter>Headers\JsonManagement\TokenSystem\Tokens</Filter>
     </ClInclude>
+    <ClInclude Include="JsonNull.Hxx">
+      <Filter>Headers\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonNumber.Hxx">
+      <Filter>Headers\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JsonToken.Cxx">
@@ -51,6 +57,12 @@
       <Filter>Sources\JsonManagement\TokenSystem\Tokens</Filter>
     </ClCompile>
     <ClCompile Include="JsonBoolean.Cxx">
+      <Filter>Sources\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonNull.Cxx">
+      <Filter>Sources\JsonManagement\TokenSystem\Tokens</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonNumber.Cxx">
       <Filter>Sources\JsonManagement\TokenSystem\Tokens</Filter>
     </ClCompile>
   </ItemGroup>

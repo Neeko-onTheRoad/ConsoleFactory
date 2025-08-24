@@ -7,7 +7,7 @@ namespace ConsoleFactory::JsonManagement {
 
 	JsonBoolean::~JsonBoolean() {}
 
-	std::unique_ptr<JsonBoolean> JsonBoolean::Parse(std::u32string string) {
+	std::unique_ptr<JsonBoolean> JsonBoolean::Parse(const std::u32string& string) {
 		
 		if (string == U"true") 
 			return std::make_unique<JsonBoolean>(true);
@@ -21,7 +21,7 @@ namespace ConsoleFactory::JsonManagement {
 
 	}
 
-	bool JsonBoolean::TryParse(std::u32string string, std::unique_ptr<JsonBoolean>& out) {
+	bool JsonBoolean::TryParse(const std::u32string& string, std::unique_ptr<JsonBoolean>& out) {
 
 		try {
 			out = Parse(string);

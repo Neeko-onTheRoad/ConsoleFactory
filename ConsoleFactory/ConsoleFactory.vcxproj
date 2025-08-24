@@ -126,11 +126,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="JsonBoolean.Hxx" />
+    <ClInclude Include="JsonNull.Hxx" />
+    <ClInclude Include="JsonNumber.Hxx" />
     <ClInclude Include="JsonString.Hxx" />
     <ClInclude Include="JsonToken.Hxx" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JsonBoolean.Cxx" />
+    <ClCompile Include="JsonNull.Cxx" />
+    <ClCompile Include="JsonNumber.Cxx" />
     <ClCompile Include="JsonString.Cxx" />
     <ClCompile Include="JsonToken.Cxx" />
   </ItemGroup>

@@ -1,7 +1,5 @@
 #pragma once
 
-#include <stdexcept>
-
 #include "JsonToken.Hxx"
 
 namespace ConsoleFactory::JsonManagement {
@@ -16,8 +14,8 @@ namespace ConsoleFactory::JsonManagement {
 		~JsonBoolean() override;
 
 	public:
-		static std::unique_ptr<JsonBoolean> Parse(std::u32string string);
-		static bool TryParse(std::u32string string, std::unique_ptr<JsonBoolean>& out);
+		static std::unique_ptr<JsonBoolean> Parse(const std::u32string& string);
+		static bool TryParse(const std::u32string& string, std::unique_ptr<JsonBoolean>& out);
 
 	};
 

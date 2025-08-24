@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <xstring>
+#include <stdexcept>
 
 namespace ConsoleFactory::JsonManagement {
 
@@ -11,8 +12,8 @@ namespace ConsoleFactory::JsonManagement {
 		virtual ~JsonToken() = 0;
 
 	public:
-		static std::unique_ptr<JsonToken> Parse(std::u32string token);
-		static bool TryParse(std::u32string token, std::unique_ptr<JsonToken>& out);
+		static std::unique_ptr<JsonToken> Parse(const std::u32string& token);
+		static bool TryParse(const std::u32string& token, std::unique_ptr<JsonToken>& out);
 
 	};
 

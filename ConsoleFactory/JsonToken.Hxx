@@ -12,6 +12,7 @@ namespace ConsoleFactory::JsonManagement {
 
 	public:
 		static std::unique_ptr<JsonToken> Parse(std::u32string token);
+		static bool TryParse(std::u32string token, std::unique_ptr<JsonToken>& out);
 
 	};
 
